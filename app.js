@@ -9,6 +9,10 @@ app.set('views','./views');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+const {apikey} = require("./config.js");
+
+console.log(apikey);
+
 app.use('/', router);
 
 app.listen(port, () => {
