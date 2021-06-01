@@ -3,8 +3,7 @@ const prod = require('../utils/products');
 const pages = {
     home:(req, res) => {
         // res.send('home')
-        let datos = {nombre:"adrian"}
-        res.status(200).render('home', datos)
+        res.status(200).render('home')
     },
     products:async(req, res) => {
         let id = req.query.id || "";

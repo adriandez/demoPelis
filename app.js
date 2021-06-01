@@ -11,7 +11,7 @@ app.use(express.json());
 
 const {apikey} = require("./config.js");
 
-console.log(apikey);
+app.use(express.static('public'));
 
 app.use('/', router);
 
