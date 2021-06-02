@@ -6,7 +6,12 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
     body
-        label(for="t") Titulo
-        form(action="/film", method="get" id="form")
-            input(type="text" id="t" name="t")
+        label(for="title") Titulo
+        form(action="/film", method="POST" id="form")
+            input(type="text" id="title" name="title")
             input(type="submit", value="search" id="submit")
+            
+        label(for="title2") Titulo
+        form(action="/postFilm", method="POST" id="form2")
+            input(type="text" id="title2" name="title2")
+            input(type="submit", value="search" id="submit2")

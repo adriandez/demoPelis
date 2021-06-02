@@ -6,8 +6,12 @@ const port = 3000
 app.set('view engine', 'pug');
 app.set('views','./views');
 
+app.use(require('body-parser').json());
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+
 
 const {apikey} = require("./config.js");
 
