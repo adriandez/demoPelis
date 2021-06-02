@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const products = {
+const filmData = {
     getfilm: async url => {
         console.log(url);
         let response = await fetch(url);
@@ -10,4 +10,4 @@ const products = {
 }
 
 
-module.exports = products;
+module.exports = filmData;

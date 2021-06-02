@@ -1,4 +1,4 @@
-const prod = require('../utils/products');
+const filmData = require('../utils/filmData');
 const {apikey} = require("../config.js");
 
 const pages = {
@@ -6,7 +6,7 @@ const pages = {
         res.status(200).render('home')
     },
     films:async(req, res) => {
-        let data = await prod.getfilm(`http://www.omdbapi.com/?t=${req.query.t}&apikey=${apikey}&`)
+        let data = await filmData.getfilm(`http://www.omdbapi.com/?t=${req.query.t}&apikey=${apikey}&`)
         console.log(data);
         res.status(200).render('film', {data})
     },
