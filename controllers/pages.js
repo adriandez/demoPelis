@@ -3,6 +3,8 @@ const prod = require('../utils/products');
 const pages = {
     home:(req, res) => {
         // res.send('home')
+        let title = req.query.titulo || "";
+        console.log(title);
         res.status(200).render('home')
     },
     products:async(req, res) => {
