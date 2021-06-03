@@ -8,6 +8,4 @@ const filmData = {
         return data;
     },
 }
-
-
 module.exports = filmData;

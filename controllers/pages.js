@@ -11,7 +11,7 @@ const pages = {
         console.log(data);
         res.status(200).render('film', {data})
     },
-    searchFilm:async(req, res) => {
+    searchFilm:async(req, res) => { //ALEJANDRO
         let data = await filmData.getfilm(`http://www.omdbapi.com/?t=${req.params.title}&apikey=${apikey}&`)
         console.log(data);
         res.status(200).render('film', {data})

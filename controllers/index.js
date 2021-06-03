@@ -7,6 +7,6 @@ router.post('/postFilm',pages.postFilm)
 router.get('/film/:title', pages.searchFilm)
 router.post('/film', pages.films)
 
-router.get('*', pages.home)
+
 
 module.exports = router;
