@@ -2,7 +2,7 @@ const express = require('express')
 const router = require('./controllers/index')
 const routerApi = require('./controllers/routerApi')
 const app = express()
-const port = 3000
+const PORT = 3000 || process.env.PORT
 
 app.set('view engine', 'pug');
 app.set('views','./views');
