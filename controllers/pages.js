@@ -1,6 +1,6 @@
 const filmData = require('../utils/filmData');
 //const {apikey} = require("../config.js");
-const apikey = process.env.apikey
+const apikey = process.env.APIKEY
 
 const pages = {
     home:(req, res) => {
